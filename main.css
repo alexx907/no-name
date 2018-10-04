@@ -1,3 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  background: url("https://assets.wordpress.envato-static.com/uploads/2017/10/autumn-fall-after-effects-02-760px.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+h1 {
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+  background-color: antiquewhite;
+
+}
+
+.alexandra {
+  background: blue;
+}
+
+.inputSection {
+  margin: 50px 0px 80px 0px;
+  width: 400px;
+}
+
+.inputs{
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+input {
   margin-top:10px;
 }
 

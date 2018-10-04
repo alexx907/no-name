@@ -6,19 +6,35 @@
     <link href="./main.css"rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>min första hemsida...</h1>
-    <img src="https://img00.deviantart.net/1b7f/i/2013/301/7/4/autum_light__by_shokoshock-d6s4h5c.jpg"
-        alt="https://img00.deviantart.net/1b7f/i/2013/301/7/4/autum_light__by_shokoshock-d6s4h5c.jpg"
-        height="90"
-        width="90"
-        >
-
-    <div>
-      <div>
-        <input placeholder="hejhej"></input>
+    <h1 id="rubrik">...My Autumn Wardrobe...</h1>
+      <div class="inputSection">
+      <div class="inputs">
+        <input placeholder="someting"></input>
       </div>
-      <button>text</buttton>
+      <button class="addOption">add</buttton>
     </div>
+    <div class="resultsection"></div>
     <button>ok!</button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function(){
+      $(".resultsection").hide()
+
+      var options= function(){
+        $(".inputs").append("<input></input>")
+      }
+
+      $(".addOption").click(options);
+
+
+      var setBodycolor= function(){
+        $("body").toggleClass("alexandra");
+      }
+
+      $("#rubrik").click(setBodycolor);
+
+    })
+    </script>
   </body>
 </html>
